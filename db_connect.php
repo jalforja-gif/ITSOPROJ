@@ -1,9 +1,9 @@
 <?php
-$servername = "mysql.railway.internal";
+$servername = "yamabiko.proxy.rlwy.net";
 $username = "root";
 $password = "YzLPNlrsEgjhqMpXeDvAkIthBIwEmrOl";
 $database = "ip_monitoring";
-$port = 3306;
+$port = 12083;
 
 $conn = new mysqli($servername, $username, $password, $database, $port);
 
