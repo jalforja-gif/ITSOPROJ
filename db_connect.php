@@ -1,10 +1,10 @@
 <?php
 // DATABASE CREDENTIALS from Railway environment variables
-$servername = getenv('mysql.railway.internal');      // Example: containers-us-west-123.railway.app
-$username   = getenv('root');      // Example: railway_user
-$password   = getenv('lLZinSGWKkCRCfUgLKuGKRiRbXOoKixx');      // Example: your_password
-$database   = getenv('ip_monitoring');      // Example: ip_monitoring
-$port       = getenv('3306');      // Example: 3306
+$servername = getenv('DB_HOST');      // Example: containers-us-west-123.railway.app
+$username   = getenv('DB_USER');      // Example: railway_user
+$password   = getenv('DB_PASS');      // Example: your_password
+$database   = getenv('DB_NAME');      // Example: ip_monitoring
+$port       = getenv('DB_PORT');      // Example: 3306
 
 // Connect to MySQL
 $conn = new mysqli($servername, $username, $password, $database, $port);
