@@ -1,5 +1,5 @@
 <?php
-$servername = "mysql://root:YzLPNlrsEgjhqMpXeDvAkIthBIwEmrOl@yamabiko.proxy.rlwy.net:12083/railway";
+$servername = "yamabiko.proxy.rlwy.net";
 $username = "root";
 $password = "ZZpGPMUulVLzUkAnMQGkyIhdurcFpIEw";
 $database = "ip_monitoring";
