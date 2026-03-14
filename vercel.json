@@ -4,6 +4,7 @@
     { "src": "*.php", "use": "@vercel/php" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/login.php" }
+    { "src": "/", "dest": "/login.php" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
