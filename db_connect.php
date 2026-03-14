@@ -1,7 +1,7 @@
 <?php
 $servername = "mysql://root:YzLPNlrsEgjhqMpXeDvAkIthBIwEmrOl@yamabiko.proxy.rlwy.net:12083/railway";
 $username = "root";
-$password = "YzLPNlrsEgjhqMpXeDvAkIthBIwEmrOl";
+$password = "ZZpGPMUulVLzUkAnMQGkyIhdurcFpIEw";
 $database = "ip_monitoring";
 $port = 12083;
 
