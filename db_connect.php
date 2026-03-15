@@ -1,9 +1,8 @@
 <?php
-$servername = "yamabiko.proxy.rlwy.net";
+$servername = "localhost";
 $username = "root";
-$password = "ZZpGPMUulVLzUkAnMQGkyIhdurcFpIEw";
+$password = "";
 $database = "ip_monitoring";
-$port = 12083;
 
 $conn = new mysqli($servername, $username, $password, $database, $port);
 
