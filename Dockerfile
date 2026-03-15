@@ -1,30 +1,24 @@
 # Base image with PHP and Apache
 FROM php:8.2-apache
 
-# Install Python
-RUN apt-get update && apt-get install -y python3 python3-pip
+# Install Python AND PHP MySQLi extension
+RUN apt-get update && apt-get install -y python3 python3-pip default-mysql-client \
+    && docker-php-ext-install mysqli pdo pdo_mysql
 
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy PHP file
+# Copy PHP files
 COPY login.php /var/www/html/
-
-# Copy .htaccess
+COPY process_login.php /var/www/html/
+COPY db_connect.php /var/www/html/
+COPY start_ml.php /var/www/html/
 COPY .htaccess /var/www/html/
 
-# Copy start_ml.php
-COPY start_ml.php /var/www/html/
-
-# Copy assets folder
+# Copy assets and other folders
 COPY assets/ /var/www/html/assets/
-
-# Copy Process_login.php
-COPY process_login.php /var/www/html/
-
-COPY db_connect.php /var/www/html/
-
 COPY ITSOPROJ /var/www/html/
+
 # Copy Python API if needed
 # COPY ml_api/ /var/www/html/ml_api/
 
