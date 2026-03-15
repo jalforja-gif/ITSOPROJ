@@ -17,7 +17,6 @@ COPY .htaccess /var/www/html/
 
 # Copy assets and other folders
 COPY assets/ /var/www/html/assets/
-COPY ITSOPROJ /var/www/html/
 
 # Copy Python API if needed
 # COPY ml_api/ /var/www/html/ml_api/
