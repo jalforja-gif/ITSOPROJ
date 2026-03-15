@@ -3,6 +3,7 @@ $servername = "dpg-d6r1lonkijhs73befb9g-a";
 $username = "ip_monitoring_user";
 $password = "";
 $database = "ip_monitoring";
+$port = 5432;
 
 $conn = new mysqli($servername, $username, $password, $database, $port);
 
