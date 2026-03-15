@@ -3,7 +3,7 @@ $host = "dpg-d6r1lonkijhs73befb9g-a";
 $port = 5432;
 $dbname = "ip_monitoring";
 $user = "ip_monitoring_user";
-$pass = ""; // ilagay password mo dito
+$pass = "VMDPlNKuDMyvMPmllLGbXc9bBRXuMP1L"; // ilagay password mo dito
 
 try {
     $pdo = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $pass);
