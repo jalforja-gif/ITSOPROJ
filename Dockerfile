@@ -11,7 +11,7 @@ WORKDIR /var/www/html
 COPY login.php /var/www/html/
 
 # Copy Python API
-COPY ml_api/ /var/www/html/ml_api/
+# COPY ml_api/ /var/www/html/ml_api/
 
 # (Optional) Install Python dependencies if meron kang requirements.txt
 # COPY requirements.txt /var/www/html/
