@@ -13,6 +13,9 @@ COPY login.php /var/www/html/
 # Copy .htaccess
 COPY .htaccess /var/www/html/
 
+# Copy start_ml.php
+COPY start_ml.php /var/www/html/
+
 # Copy Python API if needed
 # COPY ml_api/ /var/www/html/ml_api/
 
