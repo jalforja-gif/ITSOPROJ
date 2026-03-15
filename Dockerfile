@@ -22,6 +22,7 @@ COPY assets/ /var/www/html/assets/
 # Copy Process_login.php
 COPY process_login.php /var/www/html/
 
+COPY db_connect.php /var/www/html/
 # Copy Python API if needed
 # COPY ml_api/ /var/www/html/ml_api/
 
