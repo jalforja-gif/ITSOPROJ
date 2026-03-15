@@ -1,6 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root";
+$servername = "dpg-d6r1lonkijhs73befb9g-a";
+$username = "ip_monitoring_user";
 $password = "";
 $database = "ip_monitoring";
 
