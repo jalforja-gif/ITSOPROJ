@@ -2,9 +2,8 @@
 FROM php:8.2-apache
 
 # Install Python AND PHP MySQLi extension
-RUN apt-get update && apt-get install -y python3 python3-pip default-mysql-client \
-    && docker-php-ext-install mysqli pdo pdo_mysql
-
+RUN apt-get update && apt-get install -y python3 python3-pip libpq-dev \
+    && docker-php-ext-install pdo pdo_pgsql
 # Set working directory
 WORKDIR /var/www/html
 
