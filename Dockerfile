@@ -16,6 +16,9 @@ COPY .htaccess /var/www/html/
 # Copy start_ml.php
 COPY start_ml.php /var/www/html/
 
+# Copy assets folder
+COPY assets/ /var/www/html/assets/
+
 # Copy Python API if needed
 # COPY ml_api/ /var/www/html/ml_api/
 
